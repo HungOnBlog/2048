@@ -2,12 +2,12 @@ import { I2048Drawer } from '../interfaces/drawer.interface';
 import { IGame } from '../interfaces/game.interface';
 
 export class Game2048 implements IGame {
-  board: number[][] = []; // Board size is 4x4
-  score: number = 0;
-  movement: boolean = false;
-  rows: number = 4;
-  cols: number = 4;
-  numberOfMoves: number = 0;
+  private board: number[][] = []; // Board size is 4x4
+  private score: number = 0;
+  private movement: boolean = false;
+  private rows: number = 4;
+  private cols: number = 4;
+  private numberOfMoves: number = 0;
 
   constructor(private readonly drawer: I2048Drawer) {}
 
