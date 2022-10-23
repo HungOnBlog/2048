@@ -1,8 +1,8 @@
-# Minesweeper
+# 2028
 
-![Minesweeper](./minesweeper.png)
+![2048](./2048.jpg)
 
-Simple implementation of minesweeper in NodeJS (TypeScript).
+Simple implementation of 2048 in NodeJS (TypeScript).
 
 Running in console:
 
@@ -15,8 +15,4 @@ Running in console:
 
 ## How to play
 
-Use ⬅️ ⬆️ ⬇️ ➡️ to move the cursor and press ⏎ to select a cell.
-
-Use 'f' to flag a cell.
-
-Use 'space' to reveal a cell.
+Use ⬅️ ⬆️ ⬇️ ➡️ to move.
