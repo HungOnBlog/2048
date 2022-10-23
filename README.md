@@ -1,6 +1,6 @@
 # 2028
 
-![2048](./2048.jpg)
+![2048](./2048.png)
 
 Simple implementation of 2048 in NodeJS (TypeScript).
 
