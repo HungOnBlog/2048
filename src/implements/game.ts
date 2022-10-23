@@ -283,7 +283,11 @@ export class Game2048 implements IGame {
 
     // Use the keypress event to listen for the user's input
     // Use ⬅️ ⬆️ ⬇️ ➡️ to move the board
+    // Use 'Ctrl + c' to exit the game
     process.stdin.on('keypress', (str, key) => {
+      if (key.ctrl && key.name === 'c') {
+        process.exit();
+      }
       if (key.name === 'left') {
         this.moveLeft();
       } else if (key.name === 'right') {
@@ -308,7 +312,7 @@ export class Game2048 implements IGame {
         this.stop();
       }
 
-      this.loop();
+      this.drawer.draw(this.board, this.score, this.numberOfMoves);
     });
   }
 
